@@ -1,0 +1,24 @@
+<ion-view title="License Key Features" id="page8" class=" ">
+    <ion-content padding="true" class="has-header">
+
+      <ion-list ng-class="{current: selected == $index }" class="list" ng-repeat="x in data.data" ng-click="click(x.LicenseKeyId,x.FeatureId,$index)">
+        <ion-item class="">
+          <h2dark>
+            <div class="positive" style="align:center">{{get(x.FeatureId)}}
+            </div>
+
+          <div style="float:left">     <h4>
+              <strong>Expiry Date:</strong>&nbsp{{x.ExpiryDate}}</h4>
+            </div>
+
+          <div style="float:right">  <h4>
+              <strong>Count:</strong>&nbsp{{x.Count}}</h4>
+            </div>
+            <br/><h5>
+              Date Added On: &nbsp{{x.dates}}
+            </h5>
+          </h2dark>
+        </ion-item>
+</ion-list>
+    </ion-content>
+</ion-view>

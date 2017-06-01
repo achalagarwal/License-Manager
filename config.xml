@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.ginesys991828" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Ginesys</name>
+  <description>
+    A Ginesys License App
+  </description>
+  <author email="achalagarwal.01@gmail.com" href="http://example.com.com/">
+    Achal Agarwal
+  </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <access origin="*"/>
+  <access origin="tel:*" launch-external="yes"/>
+  <!-- Allow images, xhrs, etc. to google.com -->
+<access origin="http://google.com" />
+<access origin="https://google.com" />
+
+<!-- Access to the subdomain maps.google.com -->
+<access origin="http://maps.google.com" />
+
+<!-- Access to all the subdomains on google.com -->
+<access origin="http://*.google.com" />
+
+<!-- Enable requests to content: URLs -->
+<access origin="content:///*" />
+
+<!-- Don't block any requests -->
+<access origin="*" />
+<!-- Allow links to web pages to open in a browser -->
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+
+<!-- Allow links to example.com to open in a browser -->
+<allow-intent href="http://example.com/*" />
+
+<!-- Wildcards are allowed for the protocol, as a prefix
+     to the host, or as a suffix to the path -->
+<allow-intent href="*://*.example.com/*" />
+
+<!-- Allow SMS links to open messaging app -->
+<allow-intent href="sms:*" />
+
+<!-- Allow tel: links to open the dialer -->
+<allow-intent href="tel:*" />
+
+<!-- Allow geo: links to open maps -->
+<allow-intent href="geo:*" />
+
+<!-- Allow all unrecognized URLs to open installed apps
+     *NOT RECOMMENDED* -->
+<allow-intent href="*" />
+  <allow-navigation href="*"/>
+  <allow-navigation href="http://*/*"/>
+  <allow-navigation href="https://*/*"/>
+  <allow-navigation href="data:*"/>
+  <allow-intent href="*"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="SplashScreenDelay" value="2000"/>
+  <preference name="FadeSplashScreenDuration" value="2000"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+</widget>
